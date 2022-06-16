@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import { formatUserName } from './App.utils';
+import { formatUserName } from './utils';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -18,7 +18,7 @@ function App() {
         })
     }
     getUsers();
-  });
+  },[]);
 
   return (
     <>
