@@ -1,5 +1,5 @@
 import { numberOfPages } from "./numberofpages";
-describe('numberofpages', ()=>{
+describe('numberOfPages', ()=>{
   test('Number of pages for 100 items =10', ()=>{
     expect(numberOfPages(100)).toBe(10);
   })
