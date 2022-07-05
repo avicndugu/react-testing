@@ -6,3 +6,9 @@ test("Display Google's Link", ()=> {
   const linkgoogle = screen.getByText(/hello google/i);
   expect(linkgoogle).toBeInTheDocument();
 })
+
+test("Display search button", ()=> {
+  render(<TestReactTestingLibrary />);
+  const searchbutton = screen.getByText(/search/i);
+  expect(searchbutton).toBeInTheDocument();
+})

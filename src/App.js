@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import { formatUserName } from './utils';
+import NewComponentToBeTested from './NewComponentToBeTested';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -30,6 +31,7 @@ function App() {
           ))
         }
       </ul>
+      <a href="https://reactjs.com/">Learn React</a>
     </>
   );
 }
